@@ -68,6 +68,13 @@ Mã lỗi dùng đúng một trong: `lr_swap`, `vis_flag`, `position`, `missing`
 | 000000381889.jpg | Người phụ nữ mặc váy ở giữa | right_knee | vis_flag | Đầu gối phải bị váy che, tôi đã đổi từ v=2 sang v=1 vì vẫn ước lượng được vị trí. | Có |
 | face_99874.jpg | Người đeo kính râm | 8 điểm mắt | vis_flag | Tôi đã đổi 8 điểm mắt bị kính râm che từ v=0 sang occluded (v=1). | Có |
 
+| 000000572411.jpg | Những người ngồi trên tàu | Toàn bộ skeleton | ok | Đã kiểm tra vị trí điểm, trái/phải và cờ visibility. | Không cần sửa |
+| 000000359340.jpg | Người quay lưng đội mũ đỏ | Toàn bộ skeleton | ok | Đã kiểm tra trái/phải và cờ các điểm bị khuất. | Không cần sửa |
+| 000000189365.jpg | Hai người trong ảnh | Toàn bộ skeleton | ok | Đã kiểm tra các khớp thuộc từng người và cờ các điểm bị che. | Không cần sửa |
+| 000000163118.jpg | Hai người đang bật nhảy | Toàn bộ skeleton | ok | Đã kiểm tra trái/phải và tư thế chân bắt chéo. | Không cần sửa |
+| face_490361.jpg | Khuôn mặt trong ảnh | Toàn bộ 13 điểm | ok | Đã kiểm tra vị trí điểm, trái/phải và cờ visibility. | Không cần sửa |
+| face_469647.jpg | Khuôn mặt trong ảnh | Toàn bộ 13 điểm | ok | Đã kiểm tra vị trí điểm, trái/phải và cờ visibility. | Không cần sửa |
+
 Tổng hợp số lỗi theo mã:
 
 | `lr_swap` | `vis_flag` | `position` | `missing` | `extra` | `ok` |
@@ -82,8 +89,6 @@ Tổng hợp số lỗi theo mã:
 
 Tự kiểm tay trong file JSON:
 
-| File | Người / mặt kiểm (ảnh, thứ tự) | Số phần tử `keypoints` | Điểm `outside` ra `v = 0`, `occluded` ra `v = 1`? | `num_keypoints` khớp? |
-|---|---|---:|---|---|
 | File | Người / mặt kiểm (ảnh, thứ tự) | Số phần tử `keypoints` | Điểm `outside` ra `v = 0`, `occluded` ra `v = 1`? | `num_keypoints` khớp? |
 |---|---|---:|---|---|
 | `NguyenManhDung_persons.zip` | 000000381889.jpg, người thứ 1 trong JSON (id=15) | 51 | Có, có cả v=0 và v=1 | Có, 14 điểm v>0 |
