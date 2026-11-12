@@ -1,0 +1,43 @@
+{
+ "mssv": "2A202603197",
+ "ten": "NguyenManhDung",
+ "pool_version": "d04-k5-v2",
+ "cvat_user": "manhdung28",
+ "project": "d04-keypoint",
+ "persons": [
+  "000000057978.jpg",
+  "000000164659.jpg",
+  "000000201702.jpg",
+  "000000205650.jpg",
+  "000000308257.jpg",
+  "000000156986.jpg",
+  "000000189365.jpg",
+  "000000302102.jpg",
+  "000000163118.jpg",
+  "000000359340.jpg",
+  "000000572411.jpg",
+  "000000381889.jpg"
+ ],
+ "faces": [
+  "face_125051.jpg",
+  "face_300399.jpg",
+  "face_469647.jpg",
+  "face_185015.jpg",
+  "face_356144.jpg",
+  "face_168953.jpg",
+  "face_99874.jpg",
+  "face_490361.jpg"
+ ],
+ "tasks": {
+  "persons": {
+   "task_id": 15,
+   "job_id": 15,
+   "task_name": "persons-NguyenManhDung"
+  },
+  "faces": {
+   "task_id": 16,
+   "job_id": 16,
+   "task_name": "faces-NguyenManhDung"
+  }
+ }
+}
